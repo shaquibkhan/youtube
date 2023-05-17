@@ -11,7 +11,7 @@ const WatchPage = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(closeMenu())
-  }, [])
+  })
 
   return (
     <div className='px-5'>
