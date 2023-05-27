@@ -11,29 +11,29 @@ const Sidebar = () => {
   // if(!isMenuOpen) return null;
 
   return (!isMenuOpen) ? '': (
-    <div className='p-5 shadow-lg w-48'>
-      <ul>
+    <div className='Roboto p-5 shadow-lg w-48 '>
+      <ul className=''>
         <Link to={"/"}>
-        <li>Home</li>
+        <li className='bg-gray-200 rounded p-1 text-center'>Home</li>
         </Link>
-        <li>shorts</li>
-        <li>live</li>
-        <li>videos</li>
+        <li className=' rounded p-1 text-center'>Shorts</li>
+        <li className=' rounded p-1 text-center'>Subscriptions</li>
       </ul>
-      <h1 className='font-bold'>Subscriptions</h1>
+      <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
       <ul>
-        <li>music</li>
-        <li>sports</li>
-        <li>gaming</li>
-        <li>movies</li>
+        <li className=' rounded p-1 text-center'>Library</li>
+        <li className=' rounded p-1 text-center'>History</li>
+        <li className=' rounded p-1 text-center'>Your videos</li>
+        <li className=' rounded p-1 text-center'>Watch later</li>
+        <li className=' rounded p-1 text-center'>Show More</li>
       </ul>
-      <h1 className='font-bold'>Watch Later</h1>
+      <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
       <ul>
-        <li>music</li>
-        <li>sports</li>
-        <li>gaming</li>
-        <li>movies</li>
-      </ul>
+      <li className=' rounded p-1 text-center'>Liked videos</li>
+        <li className=' rounded p-1 text-center'>Cricket</li>
+        <li className=' rounded p-1 text-center'>Mix videos</li>
+        <li className=' rounded p-1 text-center'>Watch later</li>
+        </ul>
     </div>
   )
 }
